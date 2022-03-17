@@ -7,6 +7,7 @@
     ":prHourlyLimitNone"
   ],
   "dependencyDashboard": true,
+  "schedule": ["after 9pm and before 12am every weekend"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
