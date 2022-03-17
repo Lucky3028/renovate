@@ -17,8 +17,7 @@
     {
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "dependencies",
-      "rangeStrategy": "pin"
+      "groupName": "dependencies"
     }
   ]
 }
