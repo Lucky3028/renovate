@@ -1,0 +1,19 @@
+name: Validate renovate config
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Validate
+        uses: rinchsan/renovate-config-validator@b59ab0056d811b4d4695c75f9ab5ed8077af795f
+        with:
+          pattern: '*.json' # Regular expression for filename to validate, default to *.json
