@@ -6,7 +6,7 @@
     ":automergePatch",
     ":prHourlyLimitNone"
   ],
-  "schedule": ["after 9pm and before 12am every weekend"],
+#  "schedule": ["after 9pm and before 12am every weekend"],
   "dependencyDashboard": true,
   "packageRules": [
     {
