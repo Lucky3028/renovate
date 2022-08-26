@@ -4,7 +4,8 @@
     "config:base",
     ":timezone(Asia/Tokyo)",
     ":automergePatch",
-    ":prHourlyLimitNone"
+    ":prHourlyLimitNone",
+    ":semanticCommits"
   ],
   "dependencyDashboard": true,
   "schedule": ["after 9pm and before 12am every weekend"],
