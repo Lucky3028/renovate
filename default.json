@@ -20,15 +20,5 @@
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "dependencies"
     }
-  ],
-  "npmrc": "@lucky3028:registry=https://npm.pkg.github.com/",
-  "hostRules": [
-    {
-      "matchHost": "https://npm.pkg.github.com/",
-      "hostType": "npm",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolAQ/7B2c/Ip0DEal0EyhiKe8lvyxHlE+aGH6274IuUYpZobtpGqFQntMUX81hTxp20X1Z/nUlsc37HP3pvw6H6VJqtWbG38MJmWaz1/JSU1fLQ+RJnoUTUa9L+orMTPS6WIkiIz7Y1gONQhHW0C/FAXu6M++I+G8brpApVuAfA93g+upAu82bsYHTG1RG/VEQRFooqbRb3gDqI3Ojc3vWUicuSA+5EUYGw2ULQfHKklnqMJ96hIjLPVSksIVZPUIkqweB02HmaD6S0PLSYh+HS77XGLPjt/b+Se3JNxE7QWq+CyzlJx5f8ELBuynRM8Fx4Lqt6Ecb1uujxFw+NjGn0ltV6MkoZ4bSZHQfQIQiSzV6LEsJaBowy6KZi1qws6fZJSRJoyrXAuPxnOqmgmhKsy7MmOhlgGTf0B+GDNBBQjzSaTOjuqpq5Obksov11SV3PRn+U2KiTiKca22HkaDXtdltxFLFmqPmYe7EVkOzqR0HgcTml6+8a9cm4xRVAiO+u90pGno9Z1ZMmHI8g/Hg107hba3aoweOQIHwJTxeOZvKWxUlt1sY0Wpav4r41oztSESm5nHFvlzmj3yL0MfdTMIXL48rZT+Y/8Mitb7vm93iD0SdGf037ogRq2hck6f8jZKQGUjF+EzZ/UZZWhYU7UPxDjLTdbCPhKTBt77XPn6QO4TSeAFJkJjegFZzBwIrlTIEdi0Lnbpd/NVk+N+7tDfraAR48345rReKLSBFxoQBdy02UV5OORU+IbCEHe+5Lh/O4KgvYnGcdOb7cq47n9dRjKE9k0JavFrmwJKxUQRI3yjVi6IURMo9nDJqLx+cJ0keMiX0av7GNslj9A"
-      }
-    }
   ]
 }
