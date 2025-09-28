@@ -7,6 +7,7 @@ Renovate's config file.
 * renovate.json
 ```json
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>Lucky3028/renovate"]
 }
 ```
