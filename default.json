@@ -1,24 +1,44 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
+    ":configMigration",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
     ":timezone(Asia/Tokyo)",
     ":automergePatch",
-    ":prHourlyLimitNone",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergeTypes",
+    ":enableVulnerabilityAlerts",
     ":semanticCommits"
   ],
-  "dependencyDashboard": true,
-  "schedule": ["after 9pm and before 12am every weekend"],
+  "labels": [
+    "renovate"
+  ],
+  "npm": {
+    "minimumReleaseAge": "5 days"
+  },
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
-      "groupName": "devDependencies",
-      "rangeStrategy": "update-lockfile"
+      "groupName": "devDependencies (patch)",
+      "matchUpdateTypes": ["patch"]
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "devDependencies (minor)",
+      "matchUpdateTypes": ["minor"]
     },
     {
       "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "dependencies"
+      "groupName": "dependencies (patch)".
+      "matchUpdateTypes": ["patch"]
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "groupName": "dependencies (minor)".
+      "matchUpdateTypes": ["minor"]
     }
   ]
 }
