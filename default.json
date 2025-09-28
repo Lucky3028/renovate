@@ -39,6 +39,15 @@
       "matchDepTypes": ["dependencies"],
       "groupName": "dependencies (minor)",
       "matchUpdateTypes": ["minor"]
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackageNames": [
+        "actions/**"
+      ],
+      "autoMerge": true
     }
   ]
 }
