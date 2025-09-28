@@ -20,7 +20,6 @@
     "minimumReleaseAge": "5 days"
   },
   "packageRules": [
-    // devDeps と deps、patch と minor でそれぞれ 1 つの PR になるように
     {
       "matchDepTypes": ["devDependencies"],
       "groupName": "devDependencies (patch)",
@@ -41,7 +40,6 @@
       "groupName": "dependencies (minor)",
       "matchUpdateTypes": ["minor"]
     },
-    // GitHub 公式の Action は問答無用で AutoMerge
     {
       "matchManagers": [
         "github-actions"
