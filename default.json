@@ -51,7 +51,7 @@
     },
     {
       "matchManagers": [
-        "github-runners"
+        "github-runner"
       ],
       "automerge": true
     }
