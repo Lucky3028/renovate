@@ -48,6 +48,12 @@
         "actions/**"
       ],
       "automerge": true
+    },
+    {
+      "matchManagers": [
+        "github-runners"
+      ],
+      "automerge": true
     }
   ]
 }
