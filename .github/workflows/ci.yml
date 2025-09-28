@@ -16,4 +16,4 @@ jobs:
       - name: Validate
         uses: rinchsan/renovate-config-validator@a12a2b98cd4db923c33d1ce407c57afb43f3ff59 # v0.2.0
         with:
-          pattern: 'default.json5'
+          pattern: '*.json' # Regular expression for filename to validate, default to *.json
