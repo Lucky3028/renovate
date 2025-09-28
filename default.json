@@ -32,12 +32,12 @@
     },
     {
       "matchDepTypes": ["dependencies"],
-      "groupName": "dependencies (patch)".
+      "groupName": "dependencies (patch)",
       "matchUpdateTypes": ["patch"]
     },
     {
       "matchDepTypes": ["dependencies"],
-      "groupName": "dependencies (minor)".
+      "groupName": "dependencies (minor)",
       "matchUpdateTypes": ["minor"]
     }
   ]
