@@ -11,9 +11,14 @@ jobs:
     name: Validate
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-      - name: Validate
-        uses: rinchsan/renovate-config-validator@a12a2b98cd4db923c33d1ce407c57afb43f3ff59 # v0.2.0
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      # Setup Node.js explicitly to use the latest validator
+      # https://github.com/renovatebot/renovate/discussions/35787#discussioncomment-13068531
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          pattern: '*.json' # Regular expression for filename to validate, default to *.json
+          node-version: 24.9.0
+      - uses: suzuki-shunsuke/github-action-renovate-config-validator@c22827f47f4f4a5364bdba19e1fe36907ef1318e # v1.1.1
+        with:
+          strict: true
+          config_file_path: |
+            default.json
