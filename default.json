@@ -10,8 +10,7 @@
     ":automergeLinters",
     ":automergeTesters",
     ":automergeTypes",
-    ":enableVulnerabilityAlerts",
-    ":semanticCommits"
+    ":enableVulnerabilityAlerts"
   ],
   "labels": [
     "renovate"
