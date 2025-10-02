@@ -45,7 +45,8 @@
         "github-actions"
       ],
       "matchPackageNames": [
-        "actions/**"
+        "actions/**",
+        "gradle/actions"
       ],
       "automerge": true
     }
