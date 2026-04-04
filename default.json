@@ -18,7 +18,7 @@
     "renovate"
   ],
   "npm": {
-    "minimumReleaseAge": "5 days"
+    "minimumReleaseAge": "7 days"
   },
   "packageRules": [
     {
